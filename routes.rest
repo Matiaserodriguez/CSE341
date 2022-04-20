@@ -1,0 +1,29 @@
+// localHost Deploy
+
+###
+GET http://localhost:3000/api/contacts
+
+###
+GET http://localhost:3000/api/contacts/625d6bd0acea917d64c1c6aa
+
+###
+GET http://localhost:3000/api/contacts/625d6d1facea917d64c1c6ab
+
+###
+GET http://localhost:3000/api/contacts/625d6d6cacea917d64c1c6ac
+
+
+// PRODUCTION Deploy
+
+###
+GET https://nodejs-cse341.herokuapp.com/api/contacts
+
+###
+GET https://nodejs-cse341.herokuapp.com/api/contacts/625d6bd0acea917d64c1c6aa
+
+###
+GET https://nodejs-cse341.herokuapp.com/api/contacts/625d6d1facea917d64c1c6ab
+
+###
+GET https://nodejs-cse341.herokuapp.com/api/contacts/625d6d6cacea917d64c1c6ac
+
