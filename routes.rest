@@ -6,11 +6,28 @@ GET http://localhost:3000/api/contacts
 ###
 GET http://localhost:3000/api/contacts/625d6bd0acea917d64c1c6aa
 
-###
-GET http://localhost:3000/api/contacts/62643d312cb029dd5b2a2214
+### Create Contact
+POST http://localhost:3000/api/createContact/ HTTP/1.1
+content-type: application/json
 
-###
-GET http://localhost:3000/api/contacts/625d6d6cacea917d64c1c6ac
+{
+    "firstName": "Michael",
+    "lastName": "Smith",
+    "email": "michaelSmith@gmail.com",
+    "favoriteColor": "blue",
+    "birthday": "10/10/1990"
+}
+
+### Update contact. Use whatever field you want, or all of them.
+PUT http://localhost:3000/api/updateContact/62643d312cb029dd5b2a2214 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Joaquin"
+}
+
+### Delete contact
+DELETE http://localhost:3000/api/deleteContact/6267358e071fa3ef007b74cd HTTP/1.1
 
 
 // PRODUCTION Deploy
@@ -19,11 +36,28 @@ GET http://localhost:3000/api/contacts/625d6d6cacea917d64c1c6ac
 GET https://nodejs-cse341.herokuapp.com/api/contacts
 
 ###
-GET https://nodejs-cse341.herokuapp.com/api/contacts/625d6bd0acea917d64c1c6aa
+GET https://nodejs-cse341.herokuapp.com/api/contacts/6267387954d962f09253b3f0
 
-###
-GET https://nodejs-cse341.herokuapp.com/api/contacts/62643d312cb029dd5b2a2214
+### Create Contact
+POST https://nodejs-cse341.herokuapp.com/api/createContact/ HTTP/1.1
+content-type: application/json
 
-###
-GET https://nodejs-cse341.herokuapp.com/api/contacts/625d6d6cacea917d64c1c6ac
+{
+    "firstName": "Michael",
+    "lastName": "Smith",
+    "email": "michaelSmith@gmail.com",
+    "favoriteColor": "blue",
+    "birthday": "10/10/1990"
+}
+
+### Update contact. Use whatever field you want, or all of them.
+PUT https://nodejs-cse341.herokuapp.com/api/updateContact/62643d312cb029dd5b2a2214 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Joaquin"
+}
+
+### Delete contact
+DELETE https://nodejs-cse341.herokuapp.com/api/deleteContact/6267387954d962f09253b3f0 HTTP/1.1
 
