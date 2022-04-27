@@ -11,7 +11,13 @@ app
   .use(bodyParser.urlencoded({ extended: false }))
   .use(bodyParser.json())
   .use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Allow-Controll-Origin', '*');
+    res.setHeader(
+      'Access-Allow-Control-Headers', 
+      'Origin, X-Requested-With', 
+      'Content-Type', 'Accept', 'Z-Key');
+    res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Access-Controll-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     next();
   })
   .use('/', require('./routes'));
