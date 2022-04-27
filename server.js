@@ -14,7 +14,7 @@ app
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader(
       'Access-Allow-Control-Headers', 
-      'Origin, X-Requested-With, Content-Type, Accept, Z-Key');
+      'Origin, X-Requested-With, content-type, Accept, Z-Key');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     next();
   })
