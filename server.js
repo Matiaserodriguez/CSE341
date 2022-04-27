@@ -11,8 +11,8 @@ app
   .use(bodyParser.urlencoded({ extended: false }))
   .use(bodyParser.json())
   .use((req, res, next) => {
-    res.setHeader('Access-Allow-Controll-Origin', '*');
-    res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Access-Allow-Control-Origin', '*');
+    res.setHeader('Content-Type', 'text/css');
     res.setHeader(
       'Access-Allow-Control-Headers', 
       'Origin, X-Requested-With', 
