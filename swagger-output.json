@@ -139,6 +139,18 @@
         "birthday": {
           "type": "string",
           "example": "10-09-1990"
+        },
+        "hobbie": {
+          "type": "string",
+          "example": "Soccer"
+        },
+        "profession": {
+          "type": "string",
+          "example": "programmer"
+        },
+        "nickname": {
+          "type": "string",
+          "example": "Jey"
         }
       },
       "required": [
@@ -146,7 +158,10 @@
         "lastName",
         "email",
         "favoriteColor",
-        "birthday"
+        "birthday",
+        "hobbie",
+        "profession",
+        "nickname"
       ]
     },
     "ModifyContact": {
@@ -171,6 +186,18 @@
         "birthday": {
           "type": "string",
           "example": "10-09-1990"
+        },
+        "hobbie": {
+          "type": "string",
+          "example": "Soccer"
+        },
+        "profession": {
+          "type": "string",
+          "example": "programmer"
+        },
+        "nickname": {
+          "type": "string",
+          "example": "Jey"
         }
       }
     }

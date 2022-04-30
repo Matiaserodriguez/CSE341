@@ -7,6 +7,9 @@ module.exports.trueOrFalse = (req, res) => {
         'email': '',
         'favoriteColor': '',
         'birthday': '',
+        'hobbie': '',
+        'profession': '',
+        'nickname': ''
     }
 
     let trueOrFalse = true;
@@ -15,7 +18,7 @@ module.exports.trueOrFalse = (req, res) => {
         if (!has(contactSchema, element)) {
             res.status(400).send(JSON.stringify({
                 "status": "400",
-                "msg": "Something failed. Please provide at least one of the following fields: firstName, lastName, email, favoriteColor or birthday "
+                "msg": "Something failed. Please provide at least one of the following fields: firstName, lastName, email, favoriteColor, birthday, hobbie, profession or nickname "
             }))
             trueOrFalse = false;
         }

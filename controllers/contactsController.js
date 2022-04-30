@@ -52,6 +52,9 @@ const postContact = async (req, res, next) => {
     'email': '',
     'favoriteColor': '',
     'birthday': '',
+    'hobbie': '',
+    'profession': '',
+    'nickname': ''
   }
 
   let contact = req.body;
@@ -60,7 +63,7 @@ const postContact = async (req, res, next) => {
   if (!isEqual(Object.keys(contact), Object.keys(contactSchema))) {
     res.status(400).send(JSON.stringify({
       "status": "400",
-      "msg": "Please provide fields: firstName, lastName, email, favoriteColor and birthday"
+      "msg": "Please provide fields: firstName, lastName, email, favoriteColor, birthday, hobbie, profession and nickname."
     }))
     return
   }
