@@ -13,7 +13,7 @@ app
   .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader(
-      'Access-Allow-Control-Headers', 
+      'Access-Control-Allow-Headers', 
       'Origin, X-Requested-With, content-type, Accept, Z-Key');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     next();
